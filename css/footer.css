@@ -1,1 +1,9 @@
-﻿
+﻿.footer {
+    background-color: #F8F9FA;
+    color: #212529;
+}
+
+.footer-link {
+    color: black;
+    text-decoration: none;
+}
