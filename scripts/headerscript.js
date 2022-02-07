@@ -1,19 +1,30 @@
 ﻿function reformat(){
-    if ($(window).width() <= 992) { //992 slightly off
+    if ($(window).width() <= 992) { 
         $(".collapsible").hide();
+
         //$(".navbar-brand").addClass("mx-auto");
+        $(".navbar-brand img").width(75);
+        $(".navbar-brand img").height(75);
     } else {
         $(".collapsible").show();
+
+        $(".navbar-brand img").width(200);
+        $(".navbar-brand img").height(200);
     }
 }
 reformat(); // at the start of loading page, reformat nav for mobile
 
 $(window).resize(function () {
-    if ($(this).width() <= 992) { //992 slightly off
+    if ($(this).width() <= 992) { 
         $(".collapsible").hide();
 
         //$(".navbar-brand").addClass("mx-auto");
+        $(".navbar-brand img").width(75);
+        $(".navbar-brand img").height(75);
     } else {
         $(".collapsible").show();
+
+        $(".navbar-brand img").width(200);
+        $(".navbar-brand img").height(200);
     }
 });
