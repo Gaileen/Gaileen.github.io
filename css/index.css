@@ -2,6 +2,44 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.fade-in {
+    animation: fadeIn 3s;
+}
+.slide-left {
+    animation: slideLeft 1s;
+}
+
 .carousel-inner {
-    height: 550px;
+    //height: 550px; //img aspect ratio changes accordingly w/ flex box. imgs too tall for liking tho... so for now upload images of smaller height 
+}
+
+.events .flex-column {
+    padding-top: 85px;
+}
+.events .calendar {
+    padding-top: 40px;
+}
+.events .btn {
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }
