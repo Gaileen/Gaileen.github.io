@@ -9,10 +9,13 @@
     animation: slideLeft 1s;
 }
 
-.carousel-inner {
-    //height: 550px; //img aspect ratio changes accordingly w/ flex box. imgs too tall for liking tho... so for now upload images of smaller height
-
-    //width or height: cover;
+.carousel-item {
+    max-height: 300px;
+    height: auto;
+}
+.carousel-item img {
+  max-height: 300px;
+  height: auto;
 }
 
 .events {
