@@ -6,8 +6,8 @@
     } else {
         $(".collapsible").show();
 
-        $(".navbar-brand img").width(170);
-        $(".navbar-brand img").height(170);
+        $(".navbar-brand img").width(150);
+        $(".navbar-brand img").height(150);
     }
 }
 reformat(); // at the start of loading page, reformat nav for mobile
@@ -23,7 +23,7 @@ $(window).resize(function () {
     } else {
         $(".collapsible").show();
 
-        $(".navbar-brand img").width(170);
-        $(".navbar-brand img").height(170);
+        $(".navbar-brand img").width(150);
+        $(".navbar-brand img").height(150);
     }
 });

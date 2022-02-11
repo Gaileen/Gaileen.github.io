@@ -10,7 +10,9 @@
 }
 
 .carousel-inner {
-    //height: 550px; //img aspect ratio changes accordingly w/ flex box. imgs too tall for liking tho... so for now upload images of smaller height 
+    //height: 550px; //img aspect ratio changes accordingly w/ flex box. imgs too tall for liking tho... so for now upload images of smaller height
+
+    //width or height: cover;
 }
 
 .events {
