@@ -10,12 +10,17 @@
 }
 
 .carousel-item {
-    max-height: 300px;
+    max-height: 400px;
     height: auto;
 }
 .carousel-item img {
-  max-height: 300px;
-  height: auto;
+    max-height: 400px;
+    height: auto;
+}
+.carousel-caption {
+    top: 0;
+    bottom: auto;
+    padding: 138px;
 }
 
 .events {
@@ -32,6 +37,16 @@
     animation-fill-mode: both;
 }
 
+.latest {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/003/499/760/non_2x/seamless-pattern-sun-simple-isolated-hand-drawn-lines-doodle-of-yellow-with-shadow-orange-ray-or-burst-of-sun-for-banner-background-wallpaper-cover-etc-vector.jpg");
+    padding-bottom: 50px;
+}
+.latest .posts {
+    padding-top: 45px;
+}
+.latest .flex-column {
+    padding-top: 85px;
+}
 
 @keyframes fadeIn {
     from {

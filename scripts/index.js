@@ -10,6 +10,8 @@ reformat();
 $(window).resize(function () {
     if ($(this).width() <= 992) {
         $(".calendar").hide();
+
+        //center carousel caption text for all slides
     } else {
         $(".calendar").show();
     }
