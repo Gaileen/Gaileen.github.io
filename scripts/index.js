@@ -1,19 +1,31 @@
 ﻿function reformat() {
     if ($(window).width() <= 992) {
+        //fix carousel caption
+
         $(".calendar").hide();
+
+        $(".posts").hide();
     } else {
+
         $(".calendar").show();
+
+        $(".posts").show();
     }
 }
 reformat();
 
 $(window).resize(function () {
     if ($(this).width() <= 992) {
+        //fix carousel caption
+
         $(".calendar").hide();
 
-        //center carousel caption text for all slides
+        $(".posts").hide();
     } else {
+
         $(".calendar").show();
+
+        $(".posts").show();
     }
 });
 
