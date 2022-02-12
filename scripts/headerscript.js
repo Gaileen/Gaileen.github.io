@@ -1,7 +1,7 @@
 ﻿function reformat(){
     if ($(window).width() <= 992) { 
         $(".collapsible").hide();
-
+        
         $(".navbar-brand img").height(75);
     } else {
         $(".collapsible").show();
