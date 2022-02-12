@@ -48,6 +48,10 @@
     padding-top: 85px;
 }
 
+.btn-warning {
+    color: white;
+}
+
 @keyframes fadeIn {
     from {
         opacity: 0;
