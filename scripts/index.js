@@ -1,15 +1,18 @@
 ﻿function reformat() {
     if ($(window).width() <= 992) {
         //fix carousel caption;
-        $("#slide-one").attr("src", "images/banquet1.png");
-        
+        if ($(window).width() <= 768) {
+            $("#slide-one").attr("src", "images/banquet21.png");
+        } else {
+            $("#slide-one").attr("src", "images/bannercollage.png");
+        }
+
         $(".calendar").hide();
         
         $(".instagram-media").hide();
         $("#mobile-post").show();
         $("#ig-tag").removeClass("ps-5");
     } else {
-        $("#slide-one").attr("src", "images/bannercollage.png");
 
         $(".calendar").show(); 
 
@@ -22,7 +25,11 @@ reformat();
 $(window).resize(function () {
     if ($(this).width() <= 992) {
         //fix carousel caption;
-        $("#slide-one").attr("src", "images/banquet1.png");
+        if ($(window).width() <= 768) {
+            $("#slide-one").attr("src", "images/banquet21.png");
+        } else {
+            $("#slide-one").attr("src", "images/bannercollage.png");
+        }
 
         $(".calendar").hide();
         
@@ -30,7 +37,7 @@ $(window).resize(function () {
         $("#mobile-post").show();
         $("#ig-tag").removeClass("ps-5");
     } else {
-        $("#slide-one").attr("src", "images/bannercollage.png");
+        //$("#slide-one").attr("src", "images/bannercollage.png");
 
         $(".calendar").show();
 
