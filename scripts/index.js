@@ -2,7 +2,7 @@
     if ($(window).width() <= 992) {
         //fix carousel caption;
         if ($(window).width() <= 768) {
-            $("#slide-one").attr("src", "images/banquet21.png");
+            $("#slide-one").attr("src", "images/mobilebannercollage.png");
         } else {
             $("#slide-one").attr("src", "images/bannercollage.png");
         }
@@ -25,8 +25,8 @@ reformat();
 $(window).resize(function () {
     if ($(this).width() <= 992) {
         //fix carousel caption;
-        if ($(window).width() <= 768) {
-            $("#slide-one").attr("src", "images/banquet21.png");
+        if ($(this).width() <= 768) {
+            $("#slide-one").attr("src", "images/mobilebannercollage.png");
         } else {
             $("#slide-one").attr("src", "images/bannercollage.png");
         }
