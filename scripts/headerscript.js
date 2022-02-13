@@ -2,6 +2,7 @@
     if ($(window).width() <= 992) { 
         $(".collapsible").hide();
         alert("working..");
+        alert($(window).width());
         $(".collapsible").css("color", "red");
         $(".navbar-brand img").height(75);
     } else {
