@@ -10,7 +10,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapsible header">Filipinx American Student Association</div>
+            <div class="collapsible header">Filipinx.. American Student Association</div>
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
 
@@ -39,7 +39,7 @@
 
 
 <script>
-    function reformat() {
+    $(document).ready(function () {
         if ($(window).width() <= 992) {
             $(".collapsible").hide();
             alert("working..");
@@ -53,8 +53,7 @@
             $(".navbar-brand img").width(130);
             $(".navbar-brand img").height(130);
         }
-    }
-    reformat();
+    });
 
 </script>
 
