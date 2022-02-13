@@ -1,5 +1,5 @@
-﻿$(document).ready(function () {
-    if ($(window).width() <= 992 {
+﻿function reformat() {
+    if ($(window).width() <= 992) { 
         $(".collapsible").hide();
         alert("working..");
         $(".collapsible").css("color", "red");
@@ -11,8 +11,8 @@
         $(".navbar-brand img").width(130);
         $(".navbar-brand img").height(130);
     }
-});
-//reformat(); // at the start of loading page, reformat nav for mobile
+}
+reformat(); // at the start of loading page, reformat nav for mobile
 
 $(window).resize(function () {
     if ($(this).width() <= 992) { 
