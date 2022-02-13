@@ -1,6 +1,5 @@
 ﻿function reformat() {
     if ($(window).width() <= 992) {
-        //fix carousel caption;
         if ($(window).width() <= 768) {
             $("#slide-one").attr("src", "images/mobilebannercollage.png");
         } else {
@@ -24,7 +23,6 @@ reformat();
 
 $(window).resize(function () {
     if ($(this).width() <= 992) {
-        //fix carousel caption;
         if ($(this).width() <= 768) {
             $("#slide-one").attr("src", "images/mobilebannercollage.png");
         } else {

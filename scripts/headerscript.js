@@ -1,4 +1,4 @@
-﻿$(document).ready(function () {
+﻿function reformat() {
     if ($(window).width() <= 992) { 
         $(".collapsible").hide();
         alert("working..");
@@ -11,8 +11,8 @@
         $(".navbar-brand img").width(130);
         $(".navbar-brand img").height(130);
     }
-});
-//reformat(); // at the start of loading page, reformat nav for mobile
+}
+reformat(); // at the start of loading page, reformat nav for mobile
 
 $(window).resize(function () {
     if ($(this).width() <= 992) { 
