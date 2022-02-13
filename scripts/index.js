@@ -2,8 +2,8 @@
     if ($(this).width() <= 992) {
         if ($(this).width() <= 768) {
             $("#slide-one").attr("src", "images/mobilebannercollage.png");
-            $("#caption-two").css("font-size", "0.85em");
-            $("#mission").css("margin-top", "14%");
+            $("#caption-two").css("font-size", "0.75em");
+            $("#mission").css("margin-top", "18%");
         } else {
             $("#slide-one").attr("src", "images/bannercollage.png");
             $("#caption-two").css("font-size", "1rem");
