@@ -8,6 +8,9 @@
 .slide-left {
     animation: slideLeft 1s;
 }
+.slide-up {
+    animation: slideUp 2s;
+}
 
 .carousel-item {
     max-height: 400px;
@@ -56,9 +59,30 @@
 .latest .flex-column {
     padding-top: 85px;
 }
+.latest p {
+    animation-delay: 0.15s;
+    animation-fill-mode: both;
+}
+.latest .btn {
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
 
+#learn-more {
+    padding-top: 90px;
+    margin-bottom: 105px;
+}
 .btn-warning {
     color: white;
+}
+#learn-more p {
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+#learn-more .btn {
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    //width: fit-content;
 }
 
 @keyframes fadeIn {
@@ -77,5 +101,15 @@
 
     100% {
         transform: translateX(0px);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(45px);
+    }
+
+    100% {
+        transform: translateY(0px);
     }
 }
