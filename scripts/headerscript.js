@@ -11,7 +11,7 @@
         $(".navbar-brand img").width(130);
         $(".navbar-brand img").height(130);
     }
-)};
+});
 reformat(); // at the start of loading page, reformat nav for mobile
 
 $(window).resize(function () {
