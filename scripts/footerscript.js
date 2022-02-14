@@ -6,12 +6,12 @@
     }
 });
 
-$(".email").hover(function () {
-    $(this).css("color", "#0A59CA");
-    alert("hi");
-}, function () {
-    $(this).css("color", "black");
-});
+//$(".email").hover(function () {
+//    $(this).css("color", "#0A59CA");
+//    alert("hi");
+//}, function () {
+//    $(this).css("color", "black");
+//});
 
 $(".email").mouseover(function () {
     $(this).css("color", "#0A59CA");
