@@ -1,13 +1,18 @@
 ﻿$(window).resize(function () {
     if ($(this).width() <= 992) {
         if ($(this).width() <= 768) {
-            $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
+            //$("#slide-one-img").attr("src", "images/mobilebannercollage.png");
             $("#caption-two").css("font-size", "0.75em");
             $("#mission").css("margin-top", "18%");
         } else {
-            $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
-            $("#caption-two").css("font-size", "0.75em");
-            $("#mission").css("margin-top", "18%");
+            //$("#slide-one-img").attr("src", "images/mobilebannercollage.png");
+            //$("#caption-two").css("font-size", "0.75em");
+            //$("#mission").css("margin-top", "18%");
+        }
+
+        $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
+        $("#caption-two").css("font-size", "0.75em");
+        $("#mission").css("margin-top", "18%");
 
         $(".calendar").hide();
         
