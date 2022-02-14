@@ -42,8 +42,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/flagbanner.png" class="d-block w-100" alt="...">
+                <div class="banners carousel-item" style="background-image: url('images/flagbanner.png');">
+                    <img src="images/flagbanner.png" class="d-block w-auto" alt="...">
                     <div class="flex-column carousel-caption d-block pt-4" id="caption-two">
                         <div id="desc">
                             <p>FASA is a group of self-identifying Filipinx Americans at Oberlin College & Conservatory. We choose to spell "Filipinx" with an "x" to be inclusive of all genders.</p>
@@ -55,8 +55,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/banner_sunstarbackg.png" class="d-block w-100" alt="...">
+                <div class="banners carousel-item" id="slide-three" style="background-image: url('images/banner_sunstarbackg.png');">
+                    <img src="images/banner_sunstarbackg.png" class="d-block w-auto" alt="...">
                     <div class="carousel-caption d-block" id="caption-three">
                         <h5>Feel free to contact us via email!</h5>
                         <h5>fasa@oberlin.edu</h5>
@@ -178,6 +178,13 @@
                 $(".btn-warning").css("width", "auto");
 
             } else {
+
+                //new
+                //if ($(window).width() >= 1425) {
+                  //  $(".banners").removeClass("w-auto");
+                    //$(".banners").addClass("w-100");
+                //}
+
                 $("#slide-one-img").attr("src", "images/bannercollage.png");
                 $("#caption-two").css("font-size", "1.15rem");
                 $("#mission").css("margin-top", "10%");

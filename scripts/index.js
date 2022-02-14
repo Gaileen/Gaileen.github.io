@@ -20,6 +20,10 @@
             $("#mission").css("margin-top", "11%");
         }
 
+        //new;
+        //$(".banners").addClass("w-auto");
+        //$(".banners").removeClass("w-100");
+
         $(".calendar").hide();
         $(".older-posts").hide();
         $("#ig-tag").removeClass("ps-5");
@@ -28,6 +32,15 @@
         $(".btn-warning").css("width", "auto");
 
     } else {
+        //new;
+        //if ($(window).width() >= 1425) {
+        //    $(".banners").removeClass("w-auto");
+        //    $(".banners").addClass("w-100");
+        //} else {
+        //    $(".banners").addClass("w-auto");
+        //    $(".banners").removeClass("w-100");
+        //}
+
         $("#slide-one-img").attr("src", "images/bannercollage.png");
         $("#caption-two").css("font-size", "1.15rem");
         $("#mission").css("margin-top", "10%");
