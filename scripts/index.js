@@ -1,15 +1,17 @@
 ﻿$(window).resize(function () {
     if ($(this).width() <= 992) {
 
-        if ($(window).width() <= 768) {
+        if ($(this).width() <= 768) {
 
-            if ($(window).width() <= 350) {
-                $("#caption-two").css("font-size", "0.68em");
-            }
             $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
 
-            $("#caption-two").css("font-size", "0.75em");
-            $("#mission").css("margin-top", "18%");
+            if ($(this).width() <= 350) {
+                $("#caption-two").css("font-size", "0.68em");
+                $("#mission").css("margin-top", "20%");
+            } else {
+                $("#caption-two").css("font-size", "0.75em");
+                $("#mission").css("margin-top", "18%");
+            }
 
         } else {
             $("#slide-one-img").attr("src", "images/bannercollage.png");
@@ -24,34 +26,6 @@
 
         $(".btn-warning").addClass("mx-auto");
         $(".btn-warning").css("width", "auto");
-
-
-
-
-        //if ($(this).width() <= 768) {
-        //    if ($(this).width() <= 366) {
-        //        $("#caption-two").css("font-size", "0.67em");
-        //    }
-        //    //$("#caption-two").css("font-size", "0.75em");
-
-        //    //$("#mission").css("margin-top", "18%");
-        //}
-
-        //$("#slide-one-img").attr("src", "images/mobilebannercollage.png");
-        //$("#caption-two").css("font-size", "0.75em");
-        //$("#mission").css("margin-top", "18%");
-
-        //$(".calendar").hide();
-        
-        //$(".older-posts").hide();
-        //$("#ig-tag").removeClass("ps-5");
-
-        //$(".btn-warning").addClass("mx-auto");
-        //$(".btn-warning").css("width", "auto");
-
-        //if ($(this).width() <= 366) {
-        //    $("#caption-two").css("font-size", "0.67em");
-        //}
 
     } else {
         $("#slide-one-img").attr("src", "images/bannercollage.png");
