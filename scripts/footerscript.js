@@ -15,4 +15,5 @@ $(".email").hover(function () {
 
 $(".email").mouseover(function () {
     $(this).css("color", "#0A59CA");
+    alert("mouseover");
 });
