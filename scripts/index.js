@@ -34,17 +34,25 @@
 
 const aboutUsObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            //banner-to-fade-in
+        if (entry.target.className.split(" ").at(-1) == "carousel-inner" && entry.isIntersecting) {
+            $(".banner-to-fade-in").addClass("fade-in");
+        }
+        if (entry.target.className.split(" ").at(-1) == "events" && entry.isIntersecting) {
             $(".events-to-fade-in").addClass("fade-in");
             $(".events-to-slide-left").addClass("slide-left");
+        }
+        if (entry.target.className.split(" ").at(-1) == "latest" && entry.isIntersecting) {
             $(".ig-to-fade-in").addClass("fade-in");
             $(".ig-to-slide-up").addClass("slide-up");
+        }
+        if (entry.target.className.split(" ").at(-1) == "learn-more" && entry.isIntersecting) {
             $(".more-to-fade-in").addClass("fade-in");
+            console.log("last div fired");
         }
     });
 }, {});
 
-aboutUsObserver.observe(document.querySelector(".carousel"));
+aboutUsObserver.observe(document.querySelector(".carousel-inner"));
 aboutUsObserver.observe(document.querySelector(".events"));
 aboutUsObserver.observe(document.querySelector(".latest"));
+aboutUsObserver.observe(document.querySelector(".learn-more"));

@@ -25,8 +25,8 @@
     bottom: auto;
     padding-top: 9%;
 }
-.carousel-inner .btn {
-    animation-delay: 1s;
+.carousel .carousel-inner .btn {
+    animation-delay: 0.85s;
     animation-fill-mode: both;
 }
 #link-KA {
@@ -64,25 +64,25 @@
     animation-fill-mode: both;
 }
 .latest .btn {
-    animation-delay: 0.3s;
+    animation-delay: 0.5s;
     animation-fill-mode: both;
 }
 .older-posts {
     display: none;
 }
 
-#learn-more {
+.learn-more {
     padding-top: 90px;
     margin-bottom: 105px;
 }
 .btn-warning {
     color: white;
 }
-#learn-more p {
+.learn-more p {
     animation-delay: 0.5s;
     animation-fill-mode: both;
 }
-#learn-more .btn {
+.learn-more .btn {
     animation-delay: 1s;
     animation-fill-mode: both;
 }
