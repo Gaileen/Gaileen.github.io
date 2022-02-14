@@ -143,6 +143,7 @@
     <script type="text/javascript" src="scripts/index.js"></script>
 
     <script>
+
         $(function () {
             $(".header").load("https://www.fasaoberlin.com/header.html");
             $(".footer").load("https://www.fasaoberlin.com/footer.html");
@@ -150,14 +151,14 @@
 
         $(document).ready(function () {
             if ($(window).width() <= 992) {
-                if ($(window).width() <= 768) {
-                    if ($(window).width() <= 366) {
-                        $("#caption-two").css("font-size", "0.67em");
-                    }
+                //if ($(window).width() <= 768) {
+                  //  if ($(window).width() <= 366) {
+                    //    $("#caption-two").css("font-size", "0.67em");
+                    //}
                     //$("#caption-two").css("font-size", "0.75em");
 
                     //$("#mission").css("margin-top", "18%");
-                }
+                //}
 
                 $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
                 $("#caption-two").css("font-size", "0.75em");
@@ -170,6 +171,10 @@
 
                 $(".btn-warning").addClass("mx-auto");
                 $(".btn-warning").css("width", "auto");
+
+                if ($(widow).width() <= 366) {
+                    $("#caption-two").css("font-size", "0.67em");
+                }
 
             } else {
                 $("#slide-one-img").attr("src", "images/bannercollage.png");
@@ -185,6 +190,7 @@
                 $(".btn-warning").css("width", "fit-content");
             }
         });
+
     </script>
 
 </body>

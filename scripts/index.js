@@ -1,13 +1,13 @@
 ﻿$(window).resize(function () {
     if ($(this).width() <= 992) {
-        if ($(this).width() <= 768) {
-            if ($(this).width() <= 366) {
-                $("#caption-two").css("font-size", "0.67em");
-            }
-            //$("#caption-two").css("font-size", "0.75em");
+        //if ($(this).width() <= 768) {
+        //    if ($(this).width() <= 366) {
+        //        $("#caption-two").css("font-size", "0.67em");
+        //    }
+        //    //$("#caption-two").css("font-size", "0.75em");
 
-            //$("#mission").css("margin-top", "18%");
-        }
+        //    //$("#mission").css("margin-top", "18%");
+        //}
 
         $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
         $("#caption-two").css("font-size", "0.75em");
@@ -20,6 +20,10 @@
 
         $(".btn-warning").addClass("mx-auto");
         $(".btn-warning").css("width", "auto");
+
+        if ($(this).width() <= 366) {
+            $("#caption-two").css("font-size", "0.67em");
+        }
 
     } else {
         $("#slide-one-img").attr("src", "images/bannercollage.png");
