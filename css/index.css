@@ -40,6 +40,9 @@
 }
 #slide-two {
     background-image: url("images/flagbanner.png");
+    height: 400px;
+    width: auto;
+    display: block;
 }
 #slide-three {
     background-image: url("images/banner_sunstarbackg.png");
