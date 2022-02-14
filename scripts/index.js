@@ -1,5 +1,33 @@
 ﻿$(window).resize(function () {
     if ($(this).width() <= 992) {
+
+        if ($(window).width() <= 768) {
+
+            if ($(window).width() <= 350) {
+                $("#caption-two").css("font-size", "0.68em");
+            }
+            $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
+
+            $("#caption-two").css("font-size", "0.75em");
+            $("#mission").css("margin-top", "18%");
+
+        } else {
+            $("#slide-one-img").attr("src", "images/bannercollage.png");
+
+            $("#caption-two").css("font-size", "1rem");
+            $("#mission").css("margin-top", "11%");
+        }
+
+        $(".calendar").hide();
+        $(".older-posts").hide();
+        $("#ig-tag").removeClass("ps-5");
+
+        $(".btn-warning").addClass("mx-auto");
+        $(".btn-warning").css("width", "auto");
+
+
+
+
         //if ($(this).width() <= 768) {
         //    if ($(this).width() <= 366) {
         //        $("#caption-two").css("font-size", "0.67em");
@@ -9,21 +37,21 @@
         //    //$("#mission").css("margin-top", "18%");
         //}
 
-        $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
-        $("#caption-two").css("font-size", "0.75em");
-        $("#mission").css("margin-top", "18%");
+        //$("#slide-one-img").attr("src", "images/mobilebannercollage.png");
+        //$("#caption-two").css("font-size", "0.75em");
+        //$("#mission").css("margin-top", "18%");
 
-        $(".calendar").hide();
+        //$(".calendar").hide();
         
-        $(".older-posts").hide();
-        $("#ig-tag").removeClass("ps-5");
+        //$(".older-posts").hide();
+        //$("#ig-tag").removeClass("ps-5");
 
-        $(".btn-warning").addClass("mx-auto");
-        $(".btn-warning").css("width", "auto");
+        //$(".btn-warning").addClass("mx-auto");
+        //$(".btn-warning").css("width", "auto");
 
-        if ($(this).width() <= 366) {
-            $("#caption-two").css("font-size", "0.67em");
-        }
+        //if ($(this).width() <= 366) {
+        //    $("#caption-two").css("font-size", "0.67em");
+        //}
 
     } else {
         $("#slide-one-img").attr("src", "images/bannercollage.png");
