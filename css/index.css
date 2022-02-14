@@ -70,14 +70,6 @@
 .older-posts {
     display: none;
 }
-.video-container {
-    //background-image: url("images/redbtn.png");
-    width: fit-content;
-    margin-top: 132px;
-}
-.video-container button {
-    background-image: url("images/redbtn.png");
-}
 
 .learn-more {
     padding-top: 90px;
