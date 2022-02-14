@@ -11,6 +11,9 @@
 .slide-up {
     animation: slideUp 2s;
 }
+.slide-right {
+    animation: slideRight 2s;
+}
 
 .carousel-item {
     max-height: 400px;
@@ -85,7 +88,14 @@
 .learn-more .btn {
     animation-delay: 1s;
     animation-fill-mode: both;
+    z-index: -1;
 }
+.learn-more .jeepney {
+    z-index: 1;
+    width: 100px;
+    height: auto;
+}
+
 
 @keyframes fadeIn {
     from {
@@ -113,5 +123,15 @@
 
     100% {
         transform: translateY(0px);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(0);
     }
 }
