@@ -38,7 +38,8 @@
 #caption-three {
     color: #212529;
 }
-#slide-one {
+
+/*#slide-one {
     height: auto;
     width: 100%;
     display: block;
@@ -52,7 +53,7 @@
     height: 400px;
     width: 100%;
     display: block;
-}
+}*/
 
 .events {
     margin-bottom: 40px;
