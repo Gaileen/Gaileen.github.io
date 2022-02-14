@@ -82,7 +82,6 @@
 #learn-more .btn {
     animation-delay: 1s;
     animation-fill-mode: both;
-    //width: fit-content;
 }
 
 @keyframes fadeIn {
