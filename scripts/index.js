@@ -1,7 +1,7 @@
 ﻿$(window).resize(function () {
     if ($(this).width() <= 992) {
         if ($(this).width() <= 768) {
-            if ($(window).width() <= 365) {
+            if ($(window).width() <= 366) {
                 $("#caption-two").css("font-size", "0.67em");
             }
             //$("#caption-two").css("font-size", "0.75em");
