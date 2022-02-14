@@ -67,6 +67,9 @@
     animation-delay: 0.3s;
     animation-fill-mode: both;
 }
+.older-posts {
+    display: none;
+}
 
 #learn-more {
     padding-top: 90px;
