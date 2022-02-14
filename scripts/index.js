@@ -1,12 +1,11 @@
 ﻿$(window).resize(function () {
     if ($(this).width() <= 992) {
         if ($(this).width() <= 768) {
-            //$("#slide-one-img").attr("src", "images/mobilebannercollage.png");
-            $("#caption-two").css("font-size", "0.75em");
-            $("#mission").css("margin-top", "18%");
-        } else {
-            //$("#slide-one-img").attr("src", "images/mobilebannercollage.png");
+            if ($(window).width() <= 365) {
+                $("#caption-two").css("font-size", "0.67em");
+            }
             //$("#caption-two").css("font-size", "0.75em");
+
             //$("#mission").css("margin-top", "18%");
         }
 
