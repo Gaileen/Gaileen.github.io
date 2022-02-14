@@ -38,6 +38,12 @@
 #caption-three {
     color: #212529;
 }
+#slide-two {
+    background-image: url("images/flagbanner.png");
+}
+#slide-three {
+    background-image: url("images/banner_sunstarbackg.png");
+}
 
 .events {
     margin-bottom: 40px;

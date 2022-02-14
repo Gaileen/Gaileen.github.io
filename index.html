@@ -32,7 +32,7 @@
             <div class="carousel-inner">
 
                 <div class="carousel-item active">
-                    <img id="slide-one" src="images/bannercollage.png" class="d-block w-100" alt="...">
+                    <img id="slide-one-img" src="images/bannercollage.png" class="d-block w-100" alt="...">
                     <div class="carousel-caption">
                         <h1 class="banner-to-fade-in">What is FASA?</h1>
                         <button type="button" class="banner-to-fade-in btn btn-outline-light" data-bs-target="#carouselMission" data-bs-slide="next">
@@ -42,8 +42,8 @@
                         </button>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="images/flagbanner.png" class="d-block w-auto" alt="...">
+                <div class="carousel-item" id="slide-two">
+                    <!--<img src="images/flagbanner.png" class="d-block w-auto" alt="...">-->
                     <div class="flex-column carousel-caption d-block pt-4" id="caption-two">
                         <div id="desc">
                             <p>FASA is a group of self-identifying Filipinx Americans at Oberlin College & Conservatory. We choose to spell "Filipinx" with an "x" to be inclusive of all genders.</p>
@@ -55,7 +55,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" id="slide-three">
                     <img src="images/banner_sunstarbackg.png" class="d-block w-auto" alt="...">
                     <div class="carousel-caption d-block" id="caption-three">
                         <h5>Feel free to contact us via email!</h5>
@@ -150,11 +150,11 @@
         $(document).ready(function () {
             if ($(window).width() <= 992) {
                 if ($(window).width() <= 768) {
-                    $("#slide-one").attr("src", "images/mobilebannercollage.png");
+                    $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
                     $("#caption-two").css("font-size", "0.75em");
                     $("#mission").css("margin-top", "18%");
                 } else {
-                    $("#slide-one").attr("src", "images/bannercollage.png");
+                    $("#slide-one-img").attr("src", "images/bannercollage.png");
                     $("#caption-two").css("font-size", "1rem");
                     $("#mission").css("margin-top", "11%");
                 }
@@ -167,7 +167,7 @@
                 $(".btn-warning").addClass("mx-auto");
                 $(".btn-warning").css("width", "auto");
             } else {
-                $("#slide-one").attr("src", "images/bannercollage.png");
+                $("#slide-one-img").attr("src", "images/bannercollage.png");
                 $("#caption-two").css("font-size", "1.15rem");
                 $("#mission").css("margin-top", "10%");
 
