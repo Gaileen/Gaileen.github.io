@@ -31,8 +31,8 @@
 
             <div class="carousel-inner">
 
-                <div class="carousel-item active">
-                    <img id="slide-one-img" src="images/bannercollage.png" class="d-block w-100" alt="...">
+                <div class="carousel-item active" id="slide-one "style="background: url('images/bannercollage.png');">
+                    <!--<img id="slide-one-img" src="images/bannercollage.png" class="d-block w-100" alt="...">-->
                     <div class="carousel-caption">
                         <h1 class="banner-to-fade-in">What is FASA?</h1>
                         <button type="button" class="banner-to-fade-in btn btn-outline-light" data-bs-target="#carouselMission" data-bs-slide="next">
@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div class="carousel-item" id="slide-three" style="background: url('images/pale_sunstarbackg.png');">
-                    <img src="images/banner_sunstarbackg.png" class="d-block w-auto" alt="...">
+                    <!--<img src="images/banner_sunstarbackg.png" class="d-block w-auto" alt="...">-->
                     <div class="carousel-caption d-block" id="caption-three">
                         <h5>Feel free to contact us via email!</h5>
                         <h5>fasa@oberlin.edu</h5>
@@ -150,11 +150,14 @@
         $(document).ready(function () {
             if ($(window).width() <= 992) {
                 if ($(window).width() <= 768) {
-                    $("#slide-one-img").attr("src", "images/mobilebannercollage.png");
+                    if ($(window).width() <= 350) {
+                        $("#caption-two").css("font-size", "0.68em");
+                    }
+                    $("#slide-one").attr("background", "images/mobilebannercollage.png");
                     $("#caption-two").css("font-size", "0.75em");
                     $("#mission").css("margin-top", "18%");
                 } else {
-                    $("#slide-one-img").attr("src", "images/bannercollage.png");
+                    $("#slide-one").attr("background", "images/bannercollage.png");
                     $("#caption-two").css("font-size", "1rem");
                     $("#mission").css("margin-top", "11%");
                 }
@@ -166,8 +169,9 @@
 
                 $(".btn-warning").addClass("mx-auto");
                 $(".btn-warning").css("width", "auto");
+
             } else {
-                $("#slide-one-img").attr("src", "images/bannercollage.png");
+                $("#slide-one").attr("background", "images/bannercollage.png");
                 $("#caption-two").css("font-size", "1.15rem");
                 $("#mission").css("margin-top", "10%");
 
