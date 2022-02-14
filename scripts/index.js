@@ -47,7 +47,6 @@ const aboutUsObserver = new IntersectionObserver((entries, observer) => {
         }
         if (entry.target.className.split(" ").at(-1) == "learn-more" && entry.isIntersecting) {
             $(".more-to-fade-in").addClass("fade-in");
-            console.log("last div fired");
         }
     });
 }, {});
