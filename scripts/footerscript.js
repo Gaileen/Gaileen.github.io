@@ -7,6 +7,7 @@
 });
 
 $(".email").hover(function () {
+    alert("hovering");
     $(this).css("color", "#0A59CA");
 }, function () {
     $(this).css("color", "black");
