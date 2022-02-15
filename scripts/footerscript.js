@@ -16,3 +16,7 @@ $(".email").hover(function () {
 $(".email").click(function () {
     alert("yo");
 });
+
+$("#test").click(function () {
+    alert("test click works");
+});
