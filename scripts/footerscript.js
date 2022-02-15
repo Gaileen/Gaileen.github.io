@@ -18,5 +18,5 @@ $(".email").click(function () {
 });
 
 $("#test").click(function () {
-    alert("test click works");
+    console.log("test click works");
 });
