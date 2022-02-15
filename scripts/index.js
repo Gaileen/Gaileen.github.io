@@ -67,7 +67,3 @@ aboutUsObserver.observe(document.querySelector(".carousel-inner"));
 aboutUsObserver.observe(document.querySelector(".events"));
 aboutUsObserver.observe(document.querySelector(".latest"));
 aboutUsObserver.observe(document.querySelector(".learn-more"));
-
-$("#test").on("click", function () {
-    console.log("test click works index js");
-});
