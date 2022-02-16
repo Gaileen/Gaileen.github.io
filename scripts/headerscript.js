@@ -13,8 +13,6 @@
 });
 
 $(document).ready(function () {
-    $("button").click(function () {
-        var pageURL = $(location).attr("href");
-        alert(pageURL);
-    });
+    var pageURL = $(location).attr("href");
+    alert(pageURL);
 });
