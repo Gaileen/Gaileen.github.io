@@ -27,7 +27,7 @@ $(document).ready(function () {
 
     } else if (pageURL == "https://www.fasaoberlin.com/calendar.html") {
         $("#calendarlink").addClass("active");
-        $("#calendarlink").attr("ariacurrent", "page");
+        $("#calendarlink").attr("aria-current", "page");
 
         $("#homelink").removeClass("active");
         $("#homelink").attr("aria-current", "");
@@ -38,7 +38,7 @@ $(document).ready(function () {
 
     } else if (pageURL == "https://www.fasaoberlin.com/members.html") {
         $("#memberslink").addClass("active");
-        $("#memberslink").attr("ariacurrent", "page");
+        $("#memberslink").attr("aria-current", "page");
 
         $("#calendarlink").removeClass("active");
         $("#calendarlink").attr("aria-current", "");
@@ -49,7 +49,7 @@ $(document).ready(function () {
 
     } else if (pageURL == "https://www.fasaoberlin.com/resources.html") {
         $("#resourceslink").addClass("active");
-        $("#resourceslink").attr("ariacurrent", "page");
+        $("#resourceslink").attr("aria-current", "page");
 
         $("#calendarlink").removeClass("active");
         $("#calendarlink").attr("aria-current", "");
