@@ -1,8 +1,10 @@
-﻿.hero-image {
-    width: 100%;
-    height: auto;
+﻿.hero-text h1 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: white;
+    font-weight: normal;
 }
 
-.hero-text {
-    color: white;
+.calendar {
+    margin-top: 5%;
 }
