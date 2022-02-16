@@ -49,6 +49,25 @@
             $(".navbar-brand img").width(130);
             $(".navbar-brand img").height(130);
         }
+
+
+
+        var pageURL = $(location).attr("href");
+        if (pageURL == "https://www.fasaoberlin.com/") {
+            $("#homelink").addClass("active");
+            $("#homelink").attr("aria-current", "page");
+
+            $("#eventslink").removeClass("active");
+            $("#eventslink").attr("aria-current", "");
+            $("#memberslink").removeClass("active");
+            $$("#memberslink").attr("aria-current", "");
+            $("#resourceslink").removeClass("active");
+            $("#resourceslink").attr("aria-current", "");
+
+        }
+
+
+
     });
 </script>
 

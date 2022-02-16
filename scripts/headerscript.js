@@ -28,7 +28,6 @@ $(document).ready(function () {
     } else if (pageURL == "https://www.fasaoberlin.com/events.html") {
         alert("yo");
         $("#eventslink").addClass("active");
-        console.log("adding class");
         $("#eventslink").attr("aria-current", "page");
 
         $("#homelink").removeClass("active");
