@@ -19,44 +19,44 @@ $(document).ready(function () {
         $("#homelink").attr("aria-current", "page");
 
         $("#calendarlink").removeClass("active");
-        $("#calendarlink").removeAttr("aria-current");
+        $("#calendarlink").attr("aria-current", "");
         $("#memberslink").removeClass("active");
-        $("#memberslink").removeAttr("aria-current");
+        $$("#memberslink").attr("aria-current", "");
         $("#resourceslink").removeClass("active");
-        $("#resourceslink").removeAttr("aria-current");
+        $("#resourceslink").attr("aria-current", "");
 
     } else if (pageURL == "https://www.fasaoberlin.com/calendar.html") {
         $("#calendarlink").addClass("active");
         $("#calendarlink").attr("ariacurrent", "page");
 
         $("#homelink").removeClass("active");
-        $("#homelink").removeAttr("aria-current");
+        $("#homelink").attr("aria-current", "");
         $("#memberslink").removeClass("active");
-        $("#memberslink").removeAttr("aria-current");
+        $("#memberslink").attr("aria-current", "");
         $("#resourceslink").removeClass("active");
-        $("#resourceslink").removeAttr("aria-current");
+        $("#resourceslink").attr("aria-current", "");
 
     } else if (pageURL == "https://www.fasaoberlin.com/members.html") {
         $("#memberslink").addClass("active");
         $("#memberslink").attr("ariacurrent", "page");
 
         $("#calendarlink").removeClass("active");
-        $("#calendarlink").removeAttr("aria-current");
+        $("#calendarlink").attr("aria-current", "");
         $("#homelink").removeClass("active");
-        $("#homelink").removeAttr("aria-current");
+        $("#homelink").attr("aria-current", "");
         $("#resourceslink").removeClass("active");
-        $("#resourceslink").removeAttr("aria-current");
+        $("#resourceslink").attr("aria-current", "");
 
     } else if (pageURL == "https://www.fasaoberlin.com/resources.html") {
         $("#resourceslink").addClass("active");
         $("#resourceslink").attr("ariacurrent", "page");
 
         $("#calendarlink").removeClass("active");
-        $("#calendarlink").removeAttr("aria-current");
+        $("#calendarlink").attr("aria-current", "");
         $("#memberslink").removeClass("active");
-        $("#memberslink").removeAttr("aria-current");
+        $("#memberslink").attr("aria-current", "");
         $("#homelink").removeClass("active");
-        $("#homelink").removeAttr("aria-current");
+        $("#homelink").attr("aria-current", "");
 
     }
 });
