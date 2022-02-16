@@ -37,6 +37,7 @@
 
 
 <script>
+
     $(document).ready(function () {
         if ($(window).width() <= 992) {
             $(".collapsible").hide();
@@ -64,10 +65,43 @@
             $("#resourceslink").removeClass("active");
             $("#resourceslink").attr("aria-current", "");
 
+        } else if (pageURL == "https://www.fasaoberlin.com/events.html") {
+            alert("yo");
+            $("#eventslink").addClass("active");
+            $("#eventslink").attr("aria-current", "page");
+
+            $("#homelink").removeClass("active");
+            $("#homelink").attr("aria-current", "");
+            $("#memberslink").removeClass("active");
+            $("#memberslink").attr("aria-current", "");
+            $("#resourceslink").removeClass("active");
+            $("#resourceslink").attr("aria-current", "");
+
+        } else if (pageURL == "https://www.fasaoberlin.com/members.html") {
+            $("#memberslink").addClass("active");
+            $("#memberslink").attr("aria-current", "page");
+
+            $("#eventslink").removeClass("active");
+            $("#eventslink").attr("aria-current", "");
+            $("#homelink").removeClass("active");
+            $("#homelink").attr("aria-current", "");
+            $("#resourceslink").removeClass("active");
+            $("#resourceslink").attr("aria-current", "");
+
+        } else if (pageURL == "https://www.fasaoberlin.com/resources.html") {
+            $("#resourceslink").addClass("active");
+            $("#resourceslink").attr("aria-current", "page");
+
+            $("#eventslink").removeClass("active");
+            $("#eventslink").attr("aria-current", "");
+            $("#memberslink").removeClass("active");
+            $("#memberslink").attr("aria-current", "");
+            $("#homelink").removeClass("active");
+            $("#homelink").attr("aria-current", "");
+
         }
 
-
-
     });
+
 </script>
 
