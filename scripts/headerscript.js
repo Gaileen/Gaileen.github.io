@@ -18,17 +18,17 @@ $(document).ready(function () {
         $("#homelink").addClass("active");
         $("#homelink").attr("aria-current", "page");
 
-        $("#calendarlink").removeClass("active");
-        $("#calendarlink").attr("aria-current", "");
+        $("#eventslink").removeClass("active");
+        $("#eventslink").attr("aria-current", "");
         $("#memberslink").removeClass("active");
         $$("#memberslink").attr("aria-current", "");
         $("#resourceslink").removeClass("active");
         $("#resourceslink").attr("aria-current", "");
 
-    } else if (pageURL == "https://www.fasaoberlin.com/calendar.html") {
+    } else if (pageURL == "https://www.fasaoberlin.com/events.html") {
         alert("yo");
-        $("#calendarlink").addClass("active");
-        $("#calendarlink").attr("aria-current", "page");
+        $("#eventslink").addClass("active");
+        $("#eventslink").attr("aria-current", "page");
 
         $("#homelink").removeClass("active");
         $("#homelink").attr("aria-current", "");
@@ -41,8 +41,8 @@ $(document).ready(function () {
         $("#memberslink").addClass("active");
         $("#memberslink").attr("aria-current", "page");
 
-        $("#calendarlink").removeClass("active");
-        $("#calendarlink").attr("aria-current", "");
+        $("#eventslink").removeClass("active");
+        $("#eventslink").attr("aria-current", "");
         $("#homelink").removeClass("active");
         $("#homelink").attr("aria-current", "");
         $("#resourceslink").removeClass("active");
@@ -52,8 +52,8 @@ $(document).ready(function () {
         $("#resourceslink").addClass("active");
         $("#resourceslink").attr("aria-current", "page");
 
-        $("#calendarlink").removeClass("active");
-        $("#calendarlink").attr("aria-current", "");
+        $("#eventslink").removeClass("active");
+        $("#eventslink").attr("aria-current", "");
         $("#memberslink").removeClass("active");
         $("#memberslink").attr("aria-current", "");
         $("#homelink").removeClass("active");

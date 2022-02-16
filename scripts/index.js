@@ -48,7 +48,7 @@ const aboutUsObserver = new IntersectionObserver((entries, observer) => {
         if (entry.target.className.split(" ").at(-1) == "carousel-inner" && entry.isIntersecting) {
             $(".banner-to-fade-in").addClass("fade-in");
         }
-        if (entry.target.className.split(" ").at(-1) == "events" && entry.isIntersecting) {
+        if (entry.target.className.split(" ").at(-1) == "eventsdiv" && entry.isIntersecting) {
             $(".events-to-fade-in").addClass("fade-in");
             $(".events-to-slide-left").addClass("slide-left");
         }
@@ -64,6 +64,6 @@ const aboutUsObserver = new IntersectionObserver((entries, observer) => {
 }, {});
 
 aboutUsObserver.observe(document.querySelector(".carousel-inner"));
-aboutUsObserver.observe(document.querySelector(".events"));
+aboutUsObserver.observe(document.querySelector(".eventsdiv"));
 aboutUsObserver.observe(document.querySelector(".latest"));
 aboutUsObserver.observe(document.querySelector(".learn-more"));

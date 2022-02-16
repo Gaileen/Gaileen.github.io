@@ -39,16 +39,16 @@
     color: #212529;
 }
 
-.events {
+.eventsdiv {
     margin-bottom: 40px;
 }
-.events .flex-column {
+.eventsdiv .flex-column {
     padding-top: 85px;
 }
-.events .calendar {
+.eventsdiv .calendar {
     padding-top: 40px;
 }
-.events .btn {
+.eventsdiv .btn {
     animation-delay: 1s;
     animation-fill-mode: both;
 }
