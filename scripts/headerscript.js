@@ -14,5 +14,49 @@
 
 $(document).ready(function () {
     var pageURL = $(location).attr("href");
-    alert(pageURL);
+    if (pageURL == "https://www.fasaoberlin.com/") {
+        $("#homelink").addClass("active");
+        $("#homelink").attr("aria-current", "page");
+
+        $("#calendarlink").removeClass("active");
+        $("#calendarlink").removeAttr("aria-current");
+        $("#memberslink").removeClass("active");
+        $("#memberslink").removeAttr("aria-current");
+        $("#resourceslink").removeClass("active");
+        $("#resourceslink").removeAttr("aria-current");
+
+    } else if (pageURL == "https://www.fasaoberlin.com/calendar.html") {
+        $("#calendarlink").addClass("active");
+        $("#calendarlink").attr("ariacurrent", "page");
+
+        $("#homelink").removeClass("active");
+        $("#homelink").removeAttr("aria-current");
+        $("#memberslink").removeClass("active");
+        $("#memberslink").removeAttr("aria-current");
+        $("#resourceslink").removeClass("active");
+        $("#resourceslink").removeAttr("aria-current");
+
+    } else if (pageURL == "https://www.fasaoberlin.com/members.html") {
+        $("#memberslink").addClass("active");
+        $("#memberslink").attr("ariacurrent", "page");
+
+        $("#calendarlink").removeClass("active");
+        $("#calendarlink").removeAttr("aria-current");
+        $("#homelink").removeClass("active");
+        $("#homelink").removeAttr("aria-current");
+        $("#resourceslink").removeClass("active");
+        $("#resourceslink").removeAttr("aria-current");
+
+    } else if (pageURL == "https://www.fasaoberlin.com/resources.html") {
+        $("#resourceslink").addClass("active");
+        $("#resourceslink").attr("ariacurrent", "page");
+
+        $("#calendarlink").removeClass("active");
+        $("#calendarlink").removeAttr("aria-current");
+        $("#memberslink").removeClass("active");
+        $("#memberslink").removeAttr("aria-current");
+        $("#homelink").removeClass("active");
+        $("#homelink").removeAttr("aria-current");
+
+    }
 });
