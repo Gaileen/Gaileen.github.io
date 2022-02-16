@@ -26,6 +26,7 @@ $(document).ready(function () {
         $("#resourceslink").attr("aria-current", "");
 
     } else if (pageURL == "https://www.fasaoberlin.com/calendar.html") {
+        alert("yo");
         $("#calendarlink").addClass("active");
         $("#calendarlink").attr("aria-current", "page");
 
