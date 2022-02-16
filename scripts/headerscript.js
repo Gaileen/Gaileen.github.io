@@ -11,3 +11,10 @@
         $(".navbar-brand img").height(130);
     }
 });
+
+$(document).ready(function () {
+    $("button").click(function () {
+        var pageURL = $(location).attr("href");
+        alert(pageURL);
+    });
+});
