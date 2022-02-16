@@ -3,4 +3,37 @@
     padding-bottom: 25px;
     color: white;
     font-weight: normal;
+    //width: 100% bro what goin on;
+}
+
+#key {
+    margin-left: 40px;
+}
+
+.pseudo-element {
+    height: 15px;
+    margin-left: 28.5px;
+    border-left: 3px dotted gray;
+}
+
+.accordion {
+    margin: 40px;
+}
+.accordion-item {
+    border: none;
+    margin-bottom: 3px;
+}
+.accordion-item li {
+    list-style: none;
+}
+#accordion-item-one {
+    border-top: 2.5px solid gray;
+}
+.accordion-button {
+    width: 52px;
+    height: 52px;
+}
+.accordion-body {
+    border-left: 3px dotted gray;
+    margin-left: 28.5px;
 }
