@@ -48,7 +48,8 @@
 .modal-content {
     width: fit-content;
 }
-.modal-body video {
+.modal-body iframe {
     width: 100%;
     height: auto;
+    //width ="560" height="315";
 }
