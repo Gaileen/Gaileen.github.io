@@ -44,3 +44,11 @@
     border-bottom: none;
 }
 
+
+.modal-content {
+    width: fit-content;
+}
+.modal-body video {
+    width: 100%;
+    height: auto;
+}
