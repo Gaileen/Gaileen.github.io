@@ -48,8 +48,9 @@
 .modal-content {
     width: fit-content;
 }
-.modal-body iframe {
-    width: 100%;
+.modal-body {
+    //width: 100%;
+    max-width: 560px;
     height: auto;
     //width ="560" height="315";
 }
