@@ -49,8 +49,8 @@
     width: fit-content;
 }
 .modal-body {
-    //width: 100%;
-    max-width: 560px;
+    width: 100%;
+    //max-width: 560px;
     height: auto;
     //width ="560" height="315";
 }
