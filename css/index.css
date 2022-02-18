@@ -70,9 +70,9 @@
     animation-delay: 0.5s;
     animation-fill-mode: both;
 }
-/*.older-posts {
+.older-posts {
     display: none;
-}*/
+}
 
 .learn-more {
     padding-top: 90px;
