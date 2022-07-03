@@ -1,1 +1,0 @@
-For PHP practice purposes only
